@@ -31,7 +31,7 @@ const Navbar = () => {
             to="#"
             className="text-gary-700 hover:text-black text-sm font-medium uppercase"
           >
-            top wear
+            Top wear
           </Link>
           <Link
             to="#"
