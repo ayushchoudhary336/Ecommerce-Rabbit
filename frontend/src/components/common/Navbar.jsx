@@ -19,7 +19,7 @@ const Navbar = () => {
             to="#"
             className="text-gary-700 hover:text-black text-sm font-medium uppercase"
           >
-            men
+            Men
           </Link>
           <Link
             to="#"
