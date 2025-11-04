@@ -3,10 +3,9 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <>
-      {/* opbar, navbar cartdarwer */}
+    <header className="border-b border-gray-200">
       <Navbar />
-    </>
+    </header>
   );
 };
 

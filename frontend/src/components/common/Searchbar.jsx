@@ -9,6 +9,12 @@ const Searchbar = () => {
     setisopen(!isopen);
   };
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    console.log("serach term ", searchterm);
+    setisopen(false);
+  };
+
   return (
     <div
       className={`flex items-center justify-center w-full transition-all duration-300 ${
@@ -16,12 +22,16 @@ const Searchbar = () => {
       }`}
     >
       {isopen ? (
-        <form className="relative flex items-center justify-center w-full">
+        <form
+          onSubmit={handleSearch}
+          className="relative flex items-center justify-center w-full"
+        >
           <div className="relative w-1/2">
             <input
               type="text"
               placeholder="Search"
               value={searchterm}
+              onChange={(e) => setserchterm(e.target.value)}
               className="bg-gray-100 px-4 py-2 pr-12 rounded-lg focus:outline-none w-full placeholder:text-gray-700"
             />
             <button
